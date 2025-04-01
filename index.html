@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Viewer</title>
+    <title>Privacy Policy</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <h1>Markdown Viewer</h1>
-    <div id="markdown-content"></div>
+    <h1>Privacy Policy - English</h1>
+    <div id="markdown-content-eng"></div>
 
     <script>
-        const markdownText = `
+        const markdownTextEnglish = `
 **Privacy Policy**
 
 **Effective Date:** April 1st 2025
@@ -50,7 +50,7 @@ If you have any questions or concerns about this Privacy Policy, please contact 
 By using BadmintonEvent, you agree to this Privacy Policy. We may update this policy from time to time, so please check back for any changes.
         `;
 
-        document.getElementById("markdown-content").innerHTML = marked.parse(markdownText);
+        document.getElementById("markdown-content-eng").innerHTML = marked.parse(markdownTextEnglish);
     </script>
 </body>
 </html>
