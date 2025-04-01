@@ -9,7 +9,9 @@
 <body>
     <h1>Privacy Policy - English</h1>
     <div id="markdown-content-eng"></div>
-
+    <hr />
+    <div id="markdown-content-den"></div>
+    
     <script>
         const markdownTextEnglish = `
 **Privacy Policy**
@@ -50,7 +52,45 @@ If you have any questions or concerns about this Privacy Policy, please contact 
 By using BadmintonEvent, you agree to this Privacy Policy. We may update this policy from time to time, so please check back for any changes.
         `;
 
+        const markdownTextDanish = `
+**Privatlivspolitik**
+
+**Ikrafttrædelsesdato:** [Indsæt dato]
+
+Velkommen til BadmintonEvent! Dit privatliv er vigtigt for os. Denne privatlivspolitik forklarer, hvordan vi indsamler, bruger og beskytter dine personlige data, når du bruger vores app.
+
+### 1. Hvilke oplysninger vi indsamler
+Når du opretter en konto, indsamler vi følgende oplysninger:
+- Navn
+- E-mailadresse
+- Land
+
+### 2. Hvordan vi bruger dine oplysninger
+Vi bruger dine personlige oplysninger til at:
+- Oprette og administrere din konto
+- Give en personlig brugeroplevelse
+- Vise relevant badmintonindhold
+- Forbedre vores tjenester baseret på brugerfeedback
+
+### 3. Deling af data
+Vi deler ikke dine personlige oplysninger med tredjeparter. Dog kommer kamp- og eventdata, der vises i appen, fra Badminton World Federation (BWF).
+
+### 4. Dine rettigheder
+Du har ret til at:
+- Slette din konto når som helst, hvilket også fjerner alle tilknyttede personlige data
+- Kontakte os vedrørende eventuelle bekymringer om din databeskyttelse
+
+### 5. Datasikkerhed
+Vi tager din sikkerhed alvorligt og anvender avanceret teknologi, der hostes på **fly.io**, en sikker cloud-hostingplatform, for at beskytte dine personlige oplysninger mod uautoriseret adgang, ændringer eller tab.
+
+### 6. Kontakt os
+Hvis du har spørgsmål eller bekymringer om denne privatlivspolitik, kan du kontakte os på **faq@badminton.dk**.
+
+Ved at bruge BadmintonEvent accepterer du denne privatlivspolitik. Vi kan opdatere denne politik fra tid til anden, så tjek venligst tilbage for eventuelle ændringer.
+        `;
+
         document.getElementById("markdown-content-eng").innerHTML = marked.parse(markdownTextEnglish);
+        document.getElementById("markdown-content-den").innerHTML = marked.parse(markdownTextDanish);
     </script>
 </body>
 </html>
